@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NickNames projectID="ciqrd7GGAqBwAQBZ" projectPath="C:\Users\AE AQUA ALBA\Documents\PSI\2\u00baANO\Modulo 15\Ficha de trabalho 1\Clinica.vpp" selectedNickName="Realname"/>

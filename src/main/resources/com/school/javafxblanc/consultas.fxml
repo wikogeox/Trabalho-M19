@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="626.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.javafxblanc.ConsultasController">
+   <children>
+      <TableView fx:id="tableView" layoutX="100.0" layoutY="104.0" onMouseClicked="#editConsulta" prefHeight="242.0" prefWidth="684.0">
+         <columns>
+            <TableColumn fx:id="tableColumnID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="tableColumnMedico" prefWidth="134.0" text="Medico" />
+            <TableColumn fx:id="tableColumnPaciente" prefWidth="155.0" text="Paciente" />
+            <TableColumn fx:id="tableColumnData" prefWidth="162.0" text="Data" />
+            <TableColumn fx:id="tableColumnHora" prefWidth="189.0" text="Hora" />
+         </columns>
+      </TableView>
+      <Label layoutX="396.0" layoutY="37.0" text="Consultas">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxMedicos" layoutX="266.0" layoutY="394.0" prefHeight="37.0" prefWidth="160.0" promptText="Medicos" />
+      <ComboBox fx:id="comboBoxPacientes" layoutX="458.0" layoutY="394.0" prefHeight="37.0" prefWidth="160.0" promptText="Pacientes" />
+      <DatePicker fx:id="datePicker" layoutX="266.0" layoutY="473.0" prefHeight="37.0" prefWidth="160.0" promptText="Data" />
+      <TextField fx:id="txtHora" layoutX="458.0" layoutY="473.0" onKeyPressed="#TextFieldHoraKeyPressed" prefHeight="37.0" prefWidth="160.0" promptText="HH:MM:SS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAdd" layoutX="242.0" layoutY="565.0" mnemonicParsing="false" onAction="#btnAddConsulta" prefHeight="37.0" prefWidth="102.0" text="Adicionar" />
+      <Button fx:id="btnEdit" layoutX="418.0" layoutY="565.0" mnemonicParsing="false" onAction="#buttonEditar" prefHeight="37.0" prefWidth="102.0" text="Editar" />
+      <Button fx:id="btnRemove" layoutX="576.0" layoutY="565.0" mnemonicParsing="false" onAction="#ButtonRemove" prefHeight="37.0" prefWidth="102.0" text="Remover" />
+      <Label layoutX="841.0" layoutY="129.0" text="Pesquisar ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPesquisar" layoutX="809.0" layoutY="190.0" onKeyPressed="#TextFieldIdKeyPressed" />
+      <Button layoutX="850.0" layoutY="260.0" mnemonicParsing="false" onAction="#btnPesquisarConsulta" text="Pesquisar" />
+   </children>
+</AnchorPane>

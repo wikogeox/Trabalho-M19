@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.javafxblanc.SampleController">
+   <children>
+      <Button layoutX="219.0" layoutY="182.0" mnemonicParsing="false" onAction="#buttonComecar" text="Começar">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Label layoutX="115.0" layoutY="10.0" prefHeight="203.0" prefWidth="418.0" text="Bem Vindo!">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Label>
+      <Button layoutX="560.0" layoutY="371.0" mnemonicParsing="false" onAction="#buttonClose" text="Sair" />
+   </children>
+</AnchorPane>

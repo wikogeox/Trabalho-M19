@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #A52A2A;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.javafxblanc.AcercaDeController">
+    <children>
+        <Label layoutX="14.0" layoutY="247.0" text="Escola Secundária Ferreira Dias" textFill="WHITE">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="13.0" layoutY="279.0" text="Tecnico de gestão e programação de sistemas informáticos" textFill="WHITE">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="13.0" layoutY="311.0" text="2ºGI1, PSI, Módulo 19 - Tecnologia de acesso à base de dados" textFill="WHITE">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="13.0" layoutY="343.0" text="Nº10, Ivan Almeida" textFill="WHITE">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="451.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/logo_aquaalba-removebg-preview.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
