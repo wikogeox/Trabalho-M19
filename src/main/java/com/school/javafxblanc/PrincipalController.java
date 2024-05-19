@@ -31,7 +31,11 @@ public class PrincipalController {
     @FXML
     private BorderPane borderPane;
 
-    public void initialize() {
+    public void initialize()throws IOException {
+
+        Parent scene = FXMLLoader.load(getClass().getResource("pacientes.fxml"));
+        borderPane.setCenter(scene);
+
         // Obter a data e hora atuais
         LocalDateTime agora = LocalDateTime.now();
 
